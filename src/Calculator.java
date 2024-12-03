@@ -20,6 +20,9 @@ public class Calculator {
     public int modulu(int a, int b) {
         return a % b;
     }
+    public double sqrt(double a) {
+        return Math.sqrt(a);
+    }
     public static void main(String[] args) {
         Calculator calculator = new Calculator();
         System.out.println("Addition: " + calculator.add(10, 5));
@@ -28,6 +31,7 @@ public class Calculator {
         System.out.println("Division: " + calculator.divide(10, 5));
         System.out.println("Division entre 0: " + calculator.divide(10, 0));
         System.out.println("Modulu: " + calculator.modulu(10, 5));
+        System.out.println("Square Root: " + calculator.sqrt(10));
     }
 
 }
